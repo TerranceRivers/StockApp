@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Quote Lookup</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="new.html">Stock Quote Lookup</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index1.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tradingJ.html">Trading Journal</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <h1 class="mb-4">Stock Quote Lookup</h1>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="symbol">Symbol:</label>
+            <input type="text" class="form-control" id="symbol" placeholder="Enter stock symbol">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button type="button" class="btn btn-primary mt-4" id="getQuoteButton">Get Quote</button>
+        </div>
+        <div class="col-sm-4">
+          <a href="tradingJ.html" class="btn btn-secondary mt-4 float-right">Trading Journal</a>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="card-title">Stock Quote</h5>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Symbol</th>
+                      <th>Open</th>
+                      <th>High</th>
+                      <th>Low</th>
+                      <th>Price</th>
+                      <th>Volume</th>
+                    </tr>
+                  </thead>
+                  <tbody id="quote-data">
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main1.js"></script>
+  </body>
+</html>
+
+
+
+

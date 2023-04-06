@@ -1,0 +1,103 @@
+
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Trading Journal</title>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        </head>
+        <body>
+            
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="index.html">Stock Quote Lookup</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="new.html">Home</a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="trading.html">Trading Journal</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            
+                <div class="container mt-5">
+                  <h1 class="mb-4">Trading Journal</h1>
+                  <div class="row mt-5">
+                    <div class="col-sm-12">
+                      <a href="new.html" class="btn btn-secondary mb-3">Stock Quote Lookup</a>
+                      <div class="card">
+                        <div class="card-header">
+                          <h5 class="card-title">Add Trade</h5>
+                        </div>
+                        <div class="card-body">
+                          <form id="tradesForm">
+                            <div class="form-row">
+                              <div class="col-md-3 mb-3">
+                                <label for="tradeSymbol">Symbol</label>
+                                <input type="text" class="form-control" id="tradeSymbol" placeholder="Enter stock symbol" required>
+                              </div>
+                              <div class="col-md-3 mb-3">
+                                <label for="tradePrice">Price</label>
+                                <input type="number" class="form-control" id="tradePrice" placeholder="Enter price" step="0.01" min="0" required>
+                              </div>
+                              <div class="col-md-3 mb-3">
+                                <label for="tradeQuantity">Quantity</label>
+                                <input type="number" class="form-control" id="tradeQuantity" placeholder="Enter quantity" min="1" required>
+                              </div>
+                              <div class="col-md-3 mb-3">
+                                <label for="tradeNotes">Notes</label>
+                                <input type="text" class="form-control" id="tradeNotes" placeholder="Enter notes">
+                              </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Add Trade</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-sm-12">
+                      <div class="card">
+                        <div class="card-header">
+                          <h5 class="card-title">Trades</h5>
+                        </div>
+                        <div class="card-body">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                    <tr>
+                                        <th>Symbol</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total Cost</th>
+                                        <th>Notes</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="tradesTable">
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- jQuery -->
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                      <!-- Bootstrap JS -->
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+                      <!-- Custom JS -->
+                      <script src="trading.js"></script>
+      
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+          <script src="trading.js"></script>
+        </body>
+      </html>
+      
