@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="new.html">Stock Quote Lookup</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="new.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="tradingJ.html">Trading Journal</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="ROI.html">Calculators</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="mb-4">ROI Calculator</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="roiForm">
+                    <div class="form-group">
+                        <label for="initialInvestment">Initial Investment</label>
+                        <input type="number" class="form-control" id="initialInvestment"
+                            placeholder="Enter initial investment" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="finalValue">Final Value</label>
+                        <input type="number" class="form-control" id="finalValue" placeholder="Enter final value"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calculate ROI</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>ROI: <span id="roiResult">0%</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+
+        <h1 class="mb-4">Loan Payment Calculator</h1>
+      
+        <form>
+          <div class="form-group">
+            <label for="loanAmountInput">Loan Amount</label>
+            <input type="number" class="form-control" id="loanAmountInput" placeholder="Enter loan amount">
+          </div>
+          <div class="form-group">
+            <label for="interestRateInput">Interest Rate</label>
+            <input type="number" class="form-control" id="interestRateInput" placeholder="Enter annual interest rate">
+          </div>
+          <div class="form-group">
+            <label for="loanTermInput">Loan Term (years)</label>
+            <input type="number" class="form-control" id="loanTermInput" placeholder="Enter loan term in years">
+          </div>
+          <button type="button" class="btn btn-primary" id="loanPaymentBtn">Calculate Loan Payment</button>
+        </form>
+      
+        <div class="my-5" id="loanPaymentResult">
+        </div>
+      
+      </div>
+      <div class="container my-5">
+
+        <div class="container my-5">
+
+            <h1 class="mb-4">Savings Calculator</h1>
+          
+            <form id="savingsForm">
+              <div class="form-group">
+                <label for="initialSavingsInput">Initial Savings</label>
+                <input type="number" class="form-control" id="initialSavingsInput" placeholder="Enter initial savings amount">
+              </div>
+              <div class="form-group">
+                <label for="monthlyDepositInput">Monthly Deposit</label>
+                <input type="number" class="form-control" id="monthlyDepositInput" placeholder="Enter monthly deposit amount">
+              </div>
+              <div class="form-group">
+                <label for="interestRateInput">Interest Rate</label>
+                <input type="number" class="form-control" id="interestRateInput" placeholder="Enter annual interest rate">
+              </div>
+              <div class="form-group">
+                <label for="savingsTermInput">Savings Term (years)</label>
+                <input type="number" class="form-control" id="savingsTermInput" placeholder="Enter savings term in years">
+              </div>
+              <button type="submit" class="btn btn-primary" id="savingsBtn">Calculate Savings</button>
+            </form>
+          
+            <div class="my-5" id="savingsResult">
+            </div>
+          
+          </div>
+      <div class="container my-5">
+
+        <h1 class="mb-4">Retirement Calculator</h1>
+      
+        <form>
+          <div class="form-group">
+            <label for="currentAgeInput">Current Age</label>
+            <input type="number" class="form-control" id="currentAgeInput" placeholder="Enter current age">
+          </div>
+          <div class="form-group">
+            <label for="retirementAgeInput">Retirement Age</label>
+            <input type="number" class="form-control" id="retirementAgeInput" placeholder="Enter retirement age">
+          </div>
+          <div class="form-group">
+            <label for="annualIncomeInput">Annual Income</label>
+            <input type="number" class="form-control" id="annualIncomeInput" placeholder="Enter annual income">
+          </div>
+          <div class="form-group">
+            <label for="currentSavingsInput">Current Savings</label>
+            <input type="number" class="form-control" id="currentSavingsInput" placeholder="Enter current savings">
+          </div>
+          <div class="form-group">
+            <label for="retirementSpendingInput">Retirement Spending</label>
+            <input type="number" class="form-control" id="retirementSpendingInput" placeholder="Enter expected annual retirement spending">
+          </div>
+          <button type="button" class="btn btn-primary" id="retirementBtn">Calculate Retirement</button>
+        </form>
+      
+        <div class="my-5" id="retirementResult">
+        </div>
+      
+      </div>
+      
+      
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="calculator.js"></script> 
+</body>
+
+</html>
